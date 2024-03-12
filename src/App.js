@@ -22,211 +22,244 @@ import layerzeroIcon from "./assets/layerzero-network-seeklogo 1.svg";
 import artboard1 from "./assets/Artboard (2).svg";
 import artboard2 from "./assets/Artboard (1).svg";
 import responsive from "./assets/responsive.svg";
+import { Bounce, Fade, Zoom } from "react-awesome-reveal";
 
 function App() {
   return (
-    <div style={{ fontFamily: "Trueno Regular" }} className="relative">
-      <div className="w-full sm:px-[60px] px-[20px] py-[30px] justify-between flex z-[100] fixed bg-white relative">
-        <img src={logo} alt="" />
-        <div className="items-center gap-[25px] text-[#070623] sm:flex hidden">
-          <div>For Business</div>
-          <div>Media</div>
-          <div>Contact Us</div>
-          <div>About Us</div>
-          <div className="px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer">
-            Get Now
+    <div
+      style={{ fontFamily: "Trueno Regular", overflowX: "hidden" }}
+      className="relative"
+    >
+      <div className="w-full sm:px-[60px] px-[20px] py-[30px] justify-between flex z-[100] sm:fixed bg-white relative overflow-hidden">
+        <Fade cascade direction="up">
+          <img src={logo} alt="" />
+          <div className="items-center gap-[25px] text-[#070623] sm:flex hidden">
+            <div>For Business</div>
+            <div>Media</div>
+            <div>Contact Us</div>
+            <div>About Us</div>
+            <div className="px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer sm:z-[200]">
+              Get Now
+            </div>
           </div>
-        </div>
-        <img
-          src={responsive}
-          alt=""
-          className="sm:hidden block absolute right-[20px] top-[20px]"
-        />
+        </Fade>
+        <img src={responsive} alt="" className="sm:hidden block" />
       </div>
       <>
         <img
           src={polygon2}
           alt=""
-          className="top-0 absolute sm:left-0 left-[-50vw] sm:z-[110] z-0"
+          className="top-0 absolute sm:left-0 left-[-50vw]"
         />
         <img
           src={polygon3}
           alt=""
-          className="top-0 absolute sm:right-0 right-[-50vw] sm:z-[110] z-0"
+          className="top-0 absolute sm:right-0 right-[-50vw]"
         />
       </>
       <div className="pt-[100px] ">
         <div className="flex flex-col items-center mx-auto">
-          <div className="sm:text-[86px] text-[44px] font-bold text-[#070623]">
-            Be Your Bank
+          <div className="sm:text-[86px] text-[44px] font-bold text-[#070623] flex gap-[10px]">
+            <Fade cascade>
+              <div>Be</div>
+              <div>Your</div>
+              <div>Bank</div>
+            </Fade>
           </div>
-          <div className="text-center">
-            BiorBank is the first ever Web3 banking app, for everyone
-          </div>
-          <div className="mt-[70px] px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer sm:z-0 z-[120]">
-            Downlaod Now
-          </div>
-          <div className="flex items-center gap-[30px] mt-[70px] z-[120] sm:z-0">
-            <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
-              <img src={facebookIcon} alt="" />
+          <Fade direction="up" cascade>
+            <div className="text-center">
+              BiorBank is the first ever Web3 banking app, for everyone
             </div>
-            <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
-              <img src={discordIcon} alt="" />
+            <div className="mt-[70px] px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer sm:z-0 z-[120]">
+              Downlaod Now
             </div>
-            <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
-              <img src={twitterIcon} alt="" />
+            <div className="flex items-center gap-[30px] mt-[70px] z-[120] sm:z-0">
+              <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
+                <img src={facebookIcon} alt="" />
+              </div>
+              <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
+                <img src={discordIcon} alt="" />
+              </div>
+              <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
+                <img src={twitterIcon} alt="" />
+              </div>
+              <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
+                <img src={telegramIcon} alt="" />
+              </div>
             </div>
-            <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
-              <img src={telegramIcon} alt="" />
-            </div>
-          </div>
-
-          <img src={image} alt="" className="my-[70px] sm:block hidden" />
+          </Fade>
+          <Fade>
+            <img src={image} alt="" className="my-[70px] sm:block hidden" />
+          </Fade>
         </div>
         <div className="flex flex-col items-center w-[90vw] mx-auto">
           <div className="sm:flex block items-center justify-between w-full sm:mt-[0px] mt-[300px]">
-            <div className="sm:text-[54px] text-[28px] max-w-[800px] text-center sm:text-left">
-              Step into the future of banking with{" "}
-              <span className="text-[#2E30B2]">BiorBank</span>
-            </div>
-            <div className="max-w-[400px] sm:text-right text-center">
-              Experience seamless transactions, decentralized finance, and a
-              world of possibilities at your fingertips. Welcome to the
-              evolution of banking.
-            </div>
+            <Fade direction="left">
+              <div className="sm:text-[54px] text-[28px] max-w-[800px] text-center sm:text-left">
+                Step into the future of banking with{" "}
+                <span className="text-[#2E30B2]">BiorBank</span>
+              </div>
+            </Fade>
+            <Fade direction="up">
+              <div className="max-w-[400px] sm:text-right text-center">
+                Experience seamless transactions, decentralized finance, and a
+                world of possibilities at your fingertips. Welcome to the
+                evolution of banking.
+              </div>
+            </Fade>
           </div>
-          <img src={video} alt="" className="w-full my-[50px]" />
+          <Fade>
+            <img src={video} alt="" className="w-[90vw] my-[50px]" />
+          </Fade>
         </div>
         <div className="w-full flex flex-col items-center bg-[#F6F5FA] py-[70px]">
-          <div className="sm:text-[54px] text-[28px] max-w-[700px] text-center">
-            Embrace a diverse ecosystem with{" "}
-            <span className="text-[#2E30B2]">BiorBank</span>
-          </div>
-          <div className="max-w-[900px] text-center">
-            Your gateway to multi-chain functionality and cross-platform
-            accessibility. Seamlessly navigate across various chains and
-            platforms for a truly interconnected banking experience.
-          </div>
-          <div className="flex gap-[20px] sm:flex-row flex-col items-center my-[70px]">
-            <div className="bg-white py-[12px] shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] px-[18px] rounded-full text-[#A5A5A5] cursor-pointer">
-              Extension
+          <Fade cascade>
+            <div className="sm:text-[54px] text-[28px] max-w-[700px] text-center">
+              Embrace a diverse ecosystem with{" "}
+              <span className="text-[#2E30B2]">BiorBank</span>
             </div>
-            <div className="sm:w-[100px] w-[4px] sm:h-[4px] h-[100px] bg-[#A5A5A5]" />
-            <div className="bg-white py-[12px] shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] px-[18px] rounded-full text-[#A5A5A5] cursor-pointer">
-              iOS & Android App
-            </div>
-            <div className="sm:w-[100px] w-[4px] sm:h-[4px] h-[100px] bg-[#A5A5A5]" />
-            <div className="bg-white py-[12px] shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] px-[18px] rounded-full text-[#A5A5A5] cursor-pointer">
-              Web Dashboard
-            </div>
-          </div>
 
-          <div className="px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer">
-            Downlaod Now
-          </div>
+            <div className="max-w-[900px] text-center">
+              Your gateway to multi-chain functionality and cross-platform
+              accessibility. Seamlessly navigate across various chains and
+              platforms for a truly interconnected banking experience.
+            </div>
+            <div className="flex gap-[20px] sm:flex-row flex-col items-center my-[70px]">
+              <div className="bg-white py-[12px] shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] px-[18px] rounded-full text-[#A5A5A5] cursor-pointer">
+                Extension
+              </div>
+              <div className="sm:w-[100px] w-[4px] sm:h-[4px] h-[100px] bg-[#A5A5A5]" />
+              <div className="bg-white py-[12px] shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] px-[18px] rounded-full text-[#A5A5A5] cursor-pointer">
+                iOS & Android App
+              </div>
+              <div className="sm:w-[100px] w-[4px] sm:h-[4px] h-[100px] bg-[#A5A5A5]" />
+              <div className="bg-white py-[12px] shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] px-[18px] rounded-full text-[#A5A5A5] cursor-pointer">
+                Web Dashboard
+              </div>
+            </div>
+
+            <div className="px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer">
+              Downlaod Now
+            </div>
+          </Fade>
         </div>
 
         <div className="flex flex-col items-center w-[90vw] mx-auto py-[70px]">
           <div className="sm:flex items-center justify-between w-full">
-            <div className="sm:text-[54px] text-[28px] max-w-[800px] text-center sm:text-left">
-              Endless possibility with{" "}
-              <span className="text-[#2E30B2]">BiorBank's</span> functions
-            </div>
-            <div className="max-w-[400px] sm:text-right text-center">
-              From effortless transactions to powerful financial management
-              tools, explore a world of convenience and control at your
-              fingertips.
-            </div>
+            <Fade direction="left">
+              <div className="sm:text-[54px] text-[28px] max-w-[800px] text-center sm:text-left">
+                Endless possibility with{" "}
+                <span className="text-[#2E30B2]">BiorBank's</span> functions
+              </div>
+            </Fade>
+            <Fade direction="up">
+              <div className="max-w-[400px] sm:text-right text-center">
+                From effortless transactions to powerful financial management
+                tools, explore a world of convenience and control at your
+                fingertips.
+              </div>
+            </Fade>
           </div>
           <div className="sm:flex items-center gap-[40px] w-full my-[40px] sm:space-y-0 space-y-[40px]">
-            <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center sm:w-[70vw] w-full h-[550px]">
-              <div className="text-[#070623] text-[44px] max-w-[400px] text-center">
-                Interact With Web2 Banks
+            <Bounce cascade className="">
+              <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center sm:w-[40vw] w-full h-[550px]">
+                <div className="text-[#070623] text-[44px] max-w-[400px] text-center">
+                  Interact With Web2 Banks
+                </div>
+                <img src={cardsIcon} alt="" className="mt-[-80px]" />
               </div>
-              <img src={cardsIcon} alt="" className="mt-[-80px]" />
-            </div>
-            <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center w-full h-[550px] space-y-[20px]">
-              <div className="text-[#070623] text-[44px] max-w-[400px] text-center">
-                Pay your bills
+
+              <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center sm:w-[calc(50vw-40px)] w-full h-[550px] space-y-[20px]">
+                <div className="text-[#070623] text-[44px] max-w-[400px] text-center">
+                  Pay your bills
+                </div>
+                <img src={asset1} alt="" />
               </div>
-              <img src={asset1} alt="" />
-            </div>
+            </Bounce>
           </div>
           <div className="sm:flex items-center gap-[40px] w-full my-[40px] sm:space-y-0 space-y-[40px]">
-            <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center w-full h-[550px] space-y-[20px]">
-              <div className="text-[#070623] text-[44px] max-w-[400px] text-center">
-                Support for hardware wallets
+            <Bounce cascade>
+              <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center sm:w-[calc(50vw-40px)] w-full h-[550px] space-y-[20px]">
+                <div className="text-[#070623] text-[44px] max-w-[400px] text-center">
+                  Support for hardware wallets
+                </div>
+                <img src={asset3} alt="" />
               </div>
-              <img src={asset3} alt="" />
-            </div>
-            <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center w-full sm:w-[70vw] h-[550px] space-y-[50px]">
-              <div className="text-[#070623] text-[44px] max-w-[400px] text-center">
-                Cross-chain swaps
+              <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center sm:w-[40vw] w-full h-[550px] space-y-[50px]">
+                <div className="text-[#070623] text-[44px] max-w-[400px] text-center">
+                  Cross-chain swaps
+                </div>
+                <img src={asset4} alt="" className="mt-[-80px]" />
               </div>
-              <img src={asset4} alt="" className="mt-[-80px]" />
-            </div>
+            </Bounce>
           </div>
           <div className="sm:flex items-center gap-[40px] w-full my-[40px] sm:space-y-0 space-y-[40px]">
-            <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center w-full h-[550px] space-y-[20px]">
-              <div className="text-[#070623] text-[44px] max-w-[500px] text-center">
-                Track your NFTs and DeFi positions
+            <Bounce>
+              <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center sm:w-[calc(45vw-40px)] w-full h-[550px] space-y-[20px]">
+                <div className="text-[#070623] text-[44px] max-w-[500px] text-center">
+                  Track your NFTs and DeFi positions
+                </div>
+                <img src={asset5} alt="" />
               </div>
-              <img src={asset5} alt="" />
-            </div>
-            <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center w-full h-[550px] space-y-[50px]">
-              <div className="text-[#070623] text-[44px] max-w-[500px] text-center">
-                Stake And Delegate your crypto
+              <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center sm:w-[calc(45vw-40px)] w-full h-[550px] space-y-[50px]">
+                <div className="text-[#070623] text-[44px] max-w-[500px] text-center">
+                  Stake And Delegate your crypto
+                </div>
+                <img src={asset2} alt="" className="mt-[-80px]" />
               </div>
-              <img src={asset2} alt="" className="mt-[-80px]" />
-            </div>
+            </Bounce>
           </div>
         </div>
 
         <div className="w-full flex flex-col items-center py-[70px]">
-          <div className="text-[54px] max-w-[700px] text-center">
-            EVM Chains
-          </div>
-          <div className="max-w-[900px] text-center mt-[20px]">
-            Your gateway to multi-chain functionality and cross-platform
-            accessibility.
-          </div>
-          <div className="sm:flex sm:gap-[20px] items-center my-[70px] sm:space-y-0 space-y-[20px]">
-            <div className="bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] p-[4px] pr-[20px] gap-[4px] rounded-full text-[#A5A5A5] cursor-pointer flex items-center">
-              <img src={ethereumIcon} alt="" />
-              <div>Extension</div>
+          <Fade direction="up">
+            <div className="sm:text-[54px] text-[36px] max-w-[700px] text-center">
+              EVM Chains
             </div>
-            <div className="bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] p-[4px] pr-[20px] gap-[4px] rounded-full text-[#A5A5A5] cursor-pointer flex items-center">
-              <img src={ethereumIcon} alt="" />
-              <div>Extension</div>
+            <div className="max-w-[900px] text-center mt-[20px]">
+              Your gateway to multi-chain functionality and cross-platform
+              accessibility.
             </div>
-            <div className="bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] p-[4px] pr-[20px] gap-[4px] rounded-full text-[#A5A5A5] cursor-pointer flex items-center">
-              <img src={ethereumIcon} alt="" />
-              <div>Extension</div>
+            <div className="sm:flex sm:gap-[20px] items-center my-[70px] sm:space-y-0 space-y-[20px]">
+              <div className="bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] p-[4px] pr-[20px] gap-[4px] rounded-full text-[#A5A5A5] cursor-pointer flex items-center">
+                <img src={ethereumIcon} alt="" />
+                <div>Extension</div>
+              </div>
+              <div className="bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] p-[4px] pr-[20px] gap-[4px] rounded-full text-[#A5A5A5] cursor-pointer flex items-center">
+                <img src={ethereumIcon} alt="" />
+                <div>Extension</div>
+              </div>
+              <div className="bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] p-[4px] pr-[20px] gap-[4px] rounded-full text-[#A5A5A5] cursor-pointer flex items-center">
+                <img src={ethereumIcon} alt="" />
+                <div>Extension</div>
+              </div>
+              <div className="bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] p-[4px] pr-[20px] gap-[4px] rounded-full text-[#A5A5A5] cursor-pointer flex items-center">
+                <img src={ethereumIcon} alt="" />
+                <div>Extension</div>
+              </div>
             </div>
-            <div className="bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] p-[4px] pr-[20px] gap-[4px] rounded-full text-[#A5A5A5] cursor-pointer flex items-center">
-              <img src={ethereumIcon} alt="" />
-              <div>Extension</div>
-            </div>
-          </div>
 
-          <div className="px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer">
-            + 150 more
-          </div>
+            <div className="px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer">
+              + 150 more
+            </div>
+          </Fade>
         </div>
         <div className="w-full flex flex-col items-center py-[70px] bg-[#F6F5FA]">
-          <div className="text-[54px] font-bold text-[#070623]">
+          <div className="sm:text-[54px] text-[36px] font-bold text-[#070623]">
             Our Partner
           </div>
           <div className="sm:flex items-center gap-[40px] mt-[40px] sm:space-y-0 space-y-[40px]">
-            <img src={mayaIcon} alt="" />
-            <img src={thorchainIcon} alt="" />
-            <img src={chainflipIcon} alt="" />
-            <img src={layerzeroIcon} alt="" />
+            <Zoom>
+              <img src={mayaIcon} alt="" />
+              <img src={thorchainIcon} alt="" />
+              <img src={chainflipIcon} alt="" />
+              <img src={layerzeroIcon} alt="" />
+            </Zoom>
           </div>
         </div>
         <div className="w-full flex flex-col items-center py-[70px]">
           <img src={logo} alt="" />
-          <div className="text-[48px] text-center">
+          <div className="sm:text-[48px] text-[24px] text-center">
             Need to tal to us directly?{" "}
             <span className="text-[#2E30B2]">Contact Us</span>
           </div>
