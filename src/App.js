@@ -26,7 +26,7 @@ import responsive from "./assets/responsive.svg";
 function App() {
   return (
     <div style={{ fontFamily: "Trueno Regular" }} className="relative">
-      <div className="w-full sm:px-[60px] px-[20px] py-[30px] justify-between flex z-[100] fixed bg-white">
+      <div className="w-full sm:px-[60px] px-[20px] py-[30px] justify-between flex z-[100] fixed bg-white relative">
         <img src={logo} alt="" />
         <div className="items-center gap-[25px] text-[#070623] sm:flex hidden">
           <div>For Business</div>
@@ -37,11 +37,23 @@ function App() {
             Get Now
           </div>
         </div>
-        <img src={responsive} alt="" className="sm:hidden block" />
+        <img
+          src={responsive}
+          alt=""
+          className="sm:hidden block absolute right-[20px] top-[20px]"
+        />
       </div>
       <>
-        <img src={polygon2} alt="" className="top-0 absolute left-0 z-[110]" />
-        <img src={polygon3} alt="" className="top-0 absolute right-0 z-[110]" />
+        <img
+          src={polygon2}
+          alt=""
+          className="top-0 absolute sm:left-0 left-[-50vw] sm:z-[110] z-0"
+        />
+        <img
+          src={polygon3}
+          alt=""
+          className="top-0 absolute sm:right-0 right-[-50vw] sm:z-[110] z-0"
+        />
       </>
       <div className="pt-[100px] ">
         <div className="flex flex-col items-center mx-auto">
@@ -51,10 +63,10 @@ function App() {
           <div className="text-center">
             BiorBank is the first ever Web3 banking app, for everyone
           </div>
-          <div className="mt-[70px] px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer">
+          <div className="mt-[70px] px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer sm:z-0 z-[120]">
             Downlaod Now
           </div>
-          <div className="flex items-center gap-[30px] mt-[70px] z-[110]">
+          <div className="flex items-center gap-[30px] mt-[70px] z-[120] sm:z-0">
             <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
               <img src={facebookIcon} alt="" />
             </div>
