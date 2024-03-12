@@ -1,0 +1,12 @@
+@keyframes anim {
+    0% {
+        width: 0;
+    }
+    100% {
+        width:70vw
+    }
+    
+}
+.animation-funding{
+    animation: anim 0.5s normal;
+}

@@ -23,27 +23,43 @@ import artboard1 from "./assets/Artboard (2).svg";
 import artboard2 from "./assets/Artboard (1).svg";
 import responsive from "./assets/responsive.svg";
 import { Bounce, Fade, Zoom } from "react-awesome-reveal";
+import { useState } from "react";
+import { Modal } from "./Modal";
 
 function App() {
+  const [menu, setMenu] = useState(false);
+
   return (
     <div
-      style={{ fontFamily: "Trueno Regular", overflowX: "hidden" }}
+      style={{
+        fontFamily: "Trueno Regular",
+        overflowX: "hidden",
+      }}
       className="relative"
     >
-      <div className="w-full sm:px-[60px] px-[20px] py-[30px] justify-between flex z-[100] sm:fixed bg-white relative overflow-hidden">
+      <div className="w-full sm:px-[60px] px-[20px] py-[30px] justify-between flex z-[100] fixed bg-white overflow-hidden">
         <Fade cascade direction="up">
           <img src={logo} alt="" />
           <div className="items-center gap-[25px] text-[#070623] sm:flex hidden">
-            <div>For Business</div>
-            <div>Media</div>
-            <div>Contact Us</div>
-            <div>About Us</div>
-            <div className="px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer sm:z-[200]">
+            <div className="cursor-pointer hover:text-[#606060]">
+              For Business
+            </div>
+            <div className="cursor-pointer hover:text-[#606060]">Media</div>
+            <div className="cursor-pointer hover:text-[#606060]">
+              Contact Us
+            </div>
+            <div className="cursor-pointer hover:text-[#606060]">About Us</div>
+            <div className="px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer sm:z-[200] hover:translate-y-[-6px] transition ease-in-out duration-500 hover:shadow-[-1px_6px_10px_0_rgba(91,29,238,0.5)]">
               Get Now
             </div>
           </div>
         </Fade>
-        <img src={responsive} alt="" className="sm:hidden block" />
+        <img
+          src={responsive}
+          alt=""
+          className="sm:hidden block cursor-pointer"
+          onClick={() => setMenu(true)}
+        />
       </div>
       <>
         <img
@@ -70,20 +86,20 @@ function App() {
             <div className="text-center">
               BiorBank is the first ever Web3 banking app, for everyone
             </div>
-            <div className="mt-[70px] px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer sm:z-0 z-[120]">
+            <div className="mt-[70px] px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer sm:z-0 z-[120] hover:translate-y-[-6px] transition ease-in-out duration-500 hover:shadow-[-1px_6px_10px_0_rgba(91,29,238,0.5)]">
               Downlaod Now
             </div>
             <div className="flex items-center gap-[30px] mt-[70px] z-[120] sm:z-0">
-              <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
+              <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer hover:translate-y-[-6px] transition ease-in-out duration-500 hover:shadow-[-1px_6px_10px_0_rgba(150,150,150,0.5)]">
                 <img src={facebookIcon} alt="" />
               </div>
-              <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
+              <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer hover:translate-y-[-6px] transition ease-in-out duration-500 hover:shadow-[-1px_6px_10px_0_rgba(150,150,150,0.5)]">
                 <img src={discordIcon} alt="" />
               </div>
-              <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
+              <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer hover:translate-y-[-6px] transition ease-in-out duration-500 hover:shadow-[-1px_6px_10px_0_rgba(150,150,150,0.5)]">
                 <img src={twitterIcon} alt="" />
               </div>
-              <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
+              <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer hover:translate-y-[-6px] transition ease-in-out duration-500 hover:shadow-[-1px_6px_10px_0_rgba(150,150,150,0.5)]">
                 <img src={telegramIcon} alt="" />
               </div>
             </div>
@@ -138,7 +154,7 @@ function App() {
               </div>
             </div>
 
-            <div className="px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer">
+            <div className="px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer hover:translate-y-[-6px] transition ease-in-out duration-500 hover:shadow-[-1px_6px_10px_0_rgba(91,29,238,0.5)]">
               Downlaod Now
             </div>
           </Fade>
@@ -239,7 +255,7 @@ function App() {
               </div>
             </div>
 
-            <div className="px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer">
+            <div className="px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer hover:translate-y-[-6px] transition ease-in-out duration-500 hover:shadow-[-1px_6px_10px_0_rgba(91,29,238,0.5)]">
               + 150 more
             </div>
           </Fade>
@@ -274,31 +290,39 @@ function App() {
           </div>
           <div>Connect with us</div>
           <div className="flex items-center gap-[30px] my-[30px]">
-            <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
+            <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer  hover:translate-y-[-6px] transition ease-in-out duration-500 hover:shadow-[-1px_6px_10px_0_rgba(150,150,150,0.5)]">
               <img src={facebookIcon} alt="" />
             </div>
-            <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
+            <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer hover:translate-y-[-6px] transition ease-in-out duration-500 hover:shadow-[-1px_6px_10px_0_rgba(150,150,150,0.5)]">
               <img src={discordIcon} alt="" />
             </div>
-            <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
+            <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer hover:translate-y-[-6px] transition ease-in-out duration-500 hover:shadow-[-1px_6px_10px_0_rgba(150,150,150,0.5)]">
               <img src={twitterIcon} alt="" />
             </div>
-            <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
+            <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer hover:translate-y-[-6px] transition ease-in-out duration-500 hover:shadow-[-1px_6px_10px_0_rgba(150,150,150,0.5)]">
               <img src={telegramIcon} alt="" />
             </div>
           </div>
         </div>
         <div className="w-full bg-gradient-to-b from-[#2E31B7] to-[#1C1460] py-[28px]">
           <div className="sm:flex sm:gap-[40px] w-[90%] mx-auto grid grid-cols-2 items-center justify-center text-white">
-            <div>For Business</div>
-            <div>Media</div>
-            <div>Contact Us</div>
-            <div>About Us</div>
-            <div>Legal</div>
-            <div>Privacy Policy</div>
+            <div className="cursor-pointer hover:text-[#a0a0a0]">
+              For Business
+            </div>
+            <div className="cursor-pointer hover:text-[#a0a0a0]">Media</div>
+            <div className="cursor-pointer hover:text-[#a0a0a0]">
+              Contact Us
+            </div>
+            <div className="cursor-pointer hover:text-[#a0a0a0]">About Us</div>
+            <div className="cursor-pointer hover:text-[#a0a0a0]">Legal</div>
+            <div className="cursor-pointer hover:text-[#a0a0a0]">
+              Privacy Policy
+            </div>
           </div>
         </div>
       </div>
+
+      {<Modal show={menu} onHide={() => setMenu(false)} />}
     </div>
   );
 }
