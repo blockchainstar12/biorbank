@@ -21,13 +21,14 @@ import thorchainIcon from "./assets/thorchain.svg";
 import layerzeroIcon from "./assets/layerzero-network-seeklogo 1.svg";
 import artboard1 from "./assets/Artboard (2).svg";
 import artboard2 from "./assets/Artboard (1).svg";
+import responsive from "./assets/responsive.svg";
 
 function App() {
   return (
     <div style={{ fontFamily: "Trueno Regular" }} className="relative">
-      <div className="w-full px-[60px] py-[30px] justify-between flex z-[100] fixed bg-white">
+      <div className="w-full sm:px-[60px] px-[20px] py-[30px] justify-between flex z-[100] fixed bg-white">
         <img src={logo} alt="" />
-        <div className="flex items-center gap-[25px] text-[#070623]">
+        <div className="items-center gap-[25px] text-[#070623] sm:flex hidden">
           <div>For Business</div>
           <div>Media</div>
           <div>Contact Us</div>
@@ -36,6 +37,7 @@ function App() {
             Get Now
           </div>
         </div>
+        <img src={responsive} alt="" className="sm:hidden block" />
       </div>
       <>
         <img src={polygon2} alt="" className="top-0 absolute left-0 z-[110]" />
@@ -43,14 +45,16 @@ function App() {
       </>
       <div className="pt-[100px] ">
         <div className="flex flex-col items-center mx-auto">
-          <div className="text-[86px] font-bold text-[#070623]">
+          <div className="sm:text-[86px] text-[44px] font-bold text-[#070623]">
             Be Your Bank
           </div>
-          <div>BiorBank is the first ever Web3 banking app, for everyone</div>
+          <div className="text-center">
+            BiorBank is the first ever Web3 banking app, for everyone
+          </div>
           <div className="mt-[70px] px-[14px] py-[10px] rounded-full bg-[#2E30B2] text-white cursor-pointer">
             Downlaod Now
           </div>
-          <div className="flex items-center gap-[30px] mt-[70px]">
+          <div className="flex items-center gap-[30px] mt-[70px] z-[110]">
             <div className="p-[10px] rounded-full bg-white shadow-md cursor-pointer">
               <img src={facebookIcon} alt="" />
             </div>
@@ -65,15 +69,15 @@ function App() {
             </div>
           </div>
 
-          <img src={image} alt="" className="my-[70px]" />
+          <img src={image} alt="" className="my-[70px] sm:block hidden" />
         </div>
         <div className="flex flex-col items-center w-[90vw] mx-auto">
-          <div className="flex items-center justify-between w-full">
-            <div className="text-[54px] max-w-[800px]">
+          <div className="sm:flex block items-center justify-between w-full sm:mt-[0px] mt-[300px]">
+            <div className="sm:text-[54px] text-[28px] max-w-[800px] text-center sm:text-left">
               Step into the future of banking with{" "}
               <span className="text-[#2E30B2]">BiorBank</span>
             </div>
-            <div className="max-w-[400px] text-right">
+            <div className="max-w-[400px] sm:text-right text-center">
               Experience seamless transactions, decentralized finance, and a
               world of possibilities at your fingertips. Welcome to the
               evolution of banking.
@@ -82,7 +86,7 @@ function App() {
           <img src={video} alt="" className="w-full my-[50px]" />
         </div>
         <div className="w-full flex flex-col items-center bg-[#F6F5FA] py-[70px]">
-          <div className="text-[54px] max-w-[700px] text-center">
+          <div className="sm:text-[54px] text-[28px] max-w-[700px] text-center">
             Embrace a diverse ecosystem with{" "}
             <span className="text-[#2E30B2]">BiorBank</span>
           </div>
@@ -91,15 +95,15 @@ function App() {
             accessibility. Seamlessly navigate across various chains and
             platforms for a truly interconnected banking experience.
           </div>
-          <div className="flex gap-[20px] items-center my-[70px]">
+          <div className="flex gap-[20px] sm:flex-row flex-col items-center my-[70px]">
             <div className="bg-white py-[12px] shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] px-[18px] rounded-full text-[#A5A5A5] cursor-pointer">
               Extension
             </div>
-            <div className="w-[100px] h-[4px] bg-[#A5A5A5]" />
+            <div className="sm:w-[100px] w-[4px] sm:h-[4px] h-[100px] bg-[#A5A5A5]" />
             <div className="bg-white py-[12px] shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] px-[18px] rounded-full text-[#A5A5A5] cursor-pointer">
               iOS & Android App
             </div>
-            <div className="w-[100px] h-[4px] bg-[#A5A5A5]" />
+            <div className="sm:w-[100px] w-[4px] sm:h-[4px] h-[100px] bg-[#A5A5A5]" />
             <div className="bg-white py-[12px] shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] px-[18px] rounded-full text-[#A5A5A5] cursor-pointer">
               Web Dashboard
             </div>
@@ -111,19 +115,19 @@ function App() {
         </div>
 
         <div className="flex flex-col items-center w-[90vw] mx-auto py-[70px]">
-          <div className="flex items-center justify-between w-full">
-            <div className="text-[54px] max-w-[800px]">
+          <div className="sm:flex items-center justify-between w-full">
+            <div className="sm:text-[54px] text-[28px] max-w-[800px] text-center sm:text-left">
               Endless possibility with{" "}
               <span className="text-[#2E30B2]">BiorBank's</span> functions
             </div>
-            <div className="max-w-[400px] text-right">
+            <div className="max-w-[400px] sm:text-right text-center">
               From effortless transactions to powerful financial management
               tools, explore a world of convenience and control at your
               fingertips.
             </div>
           </div>
-          <div className="flex items-center gap-[40px] w-full my-[40px]">
-            <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center w-[70vw] h-[550px]">
+          <div className="sm:flex items-center gap-[40px] w-full my-[40px] sm:space-y-0 space-y-[40px]">
+            <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center sm:w-[70vw] w-full h-[550px]">
               <div className="text-[#070623] text-[44px] max-w-[400px] text-center">
                 Interact With Web2 Banks
               </div>
@@ -136,21 +140,21 @@ function App() {
               <img src={asset1} alt="" />
             </div>
           </div>
-          <div className="flex items-center gap-[40px] w-full my-[40px]">
+          <div className="sm:flex items-center gap-[40px] w-full my-[40px] sm:space-y-0 space-y-[40px]">
             <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center w-full h-[550px] space-y-[20px]">
               <div className="text-[#070623] text-[44px] max-w-[400px] text-center">
                 Support for hardware wallets
               </div>
               <img src={asset3} alt="" />
             </div>
-            <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center w-[70vw] h-[550px] space-y-[50px]">
+            <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center w-full sm:w-[70vw] h-[550px] space-y-[50px]">
               <div className="text-[#070623] text-[44px] max-w-[400px] text-center">
                 Cross-chain swaps
               </div>
               <img src={asset4} alt="" className="mt-[-80px]" />
             </div>
           </div>
-          <div className="flex items-center gap-[40px] w-full my-[40px]">
+          <div className="sm:flex items-center gap-[40px] w-full my-[40px] sm:space-y-0 space-y-[40px]">
             <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center w-full h-[550px] space-y-[20px]">
               <div className="text-[#070623] text-[44px] max-w-[500px] text-center">
                 Track your NFTs and DeFi positions
@@ -174,7 +178,7 @@ function App() {
             Your gateway to multi-chain functionality and cross-platform
             accessibility.
           </div>
-          <div className="flex gap-[20px] items-center my-[70px]">
+          <div className="sm:flex sm:gap-[20px] items-center my-[70px] sm:space-y-0 space-y-[20px]">
             <div className="bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] p-[4px] pr-[20px] gap-[4px] rounded-full text-[#A5A5A5] cursor-pointer flex items-center">
               <img src={ethereumIcon} alt="" />
               <div>Extension</div>
@@ -201,7 +205,7 @@ function App() {
           <div className="text-[54px] font-bold text-[#070623]">
             Our Partner
           </div>
-          <div className="flex items-center gap-[40px] mt-[40px]">
+          <div className="sm:flex items-center gap-[40px] mt-[40px] sm:space-y-0 space-y-[40px]">
             <img src={mayaIcon} alt="" />
             <img src={thorchainIcon} alt="" />
             <img src={chainflipIcon} alt="" />
@@ -210,7 +214,7 @@ function App() {
         </div>
         <div className="w-full flex flex-col items-center py-[70px]">
           <img src={logo} alt="" />
-          <div className="text-[48px]">
+          <div className="text-[48px] text-center">
             Need to tal to us directly?{" "}
             <span className="text-[#2E30B2]">Contact Us</span>
           </div>
@@ -219,7 +223,7 @@ function App() {
             of possibilities at your fingertips. Welcome to the evolution of
             banking.
           </div>
-          <div className="flex items-center gap-[40px] my-[24px]">
+          <div className="sm:flex items-center gap-[40px] my-[24px] sm:space-y-0 space-y-[20px]">
             <img src={artboard1} alt="" />
             <img src={artboard2} alt="" />
           </div>
@@ -240,7 +244,7 @@ function App() {
           </div>
         </div>
         <div className="w-full bg-gradient-to-b from-[#2E31B7] to-[#1C1460] py-[28px]">
-          <div className="flex gap-[40px] items-center justify-center text-white">
+          <div className="sm:flex sm:gap-[40px] w-[90%] mx-auto grid grid-cols-2 items-center justify-center text-white">
             <div>For Business</div>
             <div>Media</div>
             <div>Contact Us</div>
