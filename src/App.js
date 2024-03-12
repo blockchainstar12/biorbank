@@ -163,14 +163,14 @@ function App() {
           <div className="sm:flex items-center gap-[40px] w-full my-[40px] sm:space-y-0 space-y-[40px]">
             <Bounce cascade className="">
               <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center sm:w-[40vw] w-full h-[550px]">
-                <div className="text-[#070623] text-[44px] max-w-[400px] text-center">
+                <div className="text-[#070623] sm:text-[44px] text-[32px] max-w-[400px] text-center">
                   Interact With Web2 Banks
                 </div>
                 <img src={cardsIcon} alt="" className="mt-[-80px]" />
               </div>
 
               <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center sm:w-[calc(50vw-40px)] w-full h-[550px] space-y-[20px]">
-                <div className="text-[#070623] text-[44px] max-w-[400px] text-center">
+                <div className="text-[#070623] sm:text-[44px] text-[32px] max-w-[400px] text-center">
                   Pay your bills
                 </div>
                 <img src={asset1} alt="" />
@@ -180,13 +180,13 @@ function App() {
           <div className="sm:flex items-center gap-[40px] w-full my-[40px] sm:space-y-0 space-y-[40px]">
             <Bounce cascade>
               <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center sm:w-[calc(50vw-40px)] w-full h-[550px] space-y-[20px]">
-                <div className="text-[#070623] text-[44px] max-w-[400px] text-center">
+                <div className="text-[#070623] sm:text-[44px] text-[32px] max-w-[400px] text-center">
                   Support for hardware wallets
                 </div>
                 <img src={asset3} alt="" />
               </div>
               <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center sm:w-[40vw] w-full h-[550px] space-y-[50px]">
-                <div className="text-[#070623] text-[44px] max-w-[400px] text-center">
+                <div className="text-[#070623] sm:text-[44px] text-[32px] max-w-[400px] text-center">
                   Cross-chain swaps
                 </div>
                 <img src={asset4} alt="" className="mt-[-80px]" />
@@ -196,13 +196,13 @@ function App() {
           <div className="sm:flex items-center gap-[40px] w-full my-[40px] sm:space-y-0 space-y-[40px]">
             <Bounce>
               <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center sm:w-[calc(45vw-40px)] w-full h-[550px] space-y-[20px]">
-                <div className="text-[#070623] text-[44px] max-w-[500px] text-center">
+                <div className="text-[#070623] sm:text-[44px] text-[32px] max-w-[500px] text-center">
                   Track your NFTs and DeFi positions
                 </div>
                 <img src={asset5} alt="" />
               </div>
               <div className="rounded-[24px] bg-white shadow-[2px_4px_40px_0_rgba(170,170,170,0.25)] flex flex-col items-center justify-center sm:w-[calc(45vw-40px)] w-full h-[550px] space-y-[50px]">
-                <div className="text-[#070623] text-[44px] max-w-[500px] text-center">
+                <div className="text-[#070623] sm:text-[44px] text-[32px] max-w-[500px] text-center">
                   Stake And Delegate your crypto
                 </div>
                 <img src={asset2} alt="" className="mt-[-80px]" />
@@ -259,7 +259,7 @@ function App() {
         </div>
         <div className="w-full flex flex-col items-center py-[70px]">
           <img src={logo} alt="" />
-          <div className="sm:text-[48px] text-[24px] text-center">
+          <div className="sm:text-[48px] text-[24px] text-center max-w-[300px] my-[20px] sm:max-w-[800px]">
             Need to tal to us directly?{" "}
             <span className="text-[#2E30B2]">Contact Us</span>
           </div>
