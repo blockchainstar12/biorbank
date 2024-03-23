@@ -52,7 +52,7 @@ export const Modal = ({ show, onHide = () => {} }) => {
           <hr />
           <div className="cursor-pointer hover:text-[#606060]">About Us</div>
           <hr />
-          <div className="px-[14px] py-[10px] w-full text-center rounded-full bg-[#2E30B2] text-white cursor-pointer sm:z-[200] hover:translate-y-[-6px] transition ease-in-out duration-500 hover:shadow-[-1px_6px_10px_0_rgba(91,29,238,0.5)]">
+          <div className="px-[14px] py-[10px] w-full text-center rounded-full bg-gradient-to-tr from-[#1C1460] to-[#2E31B7] text-white cursor-pointer sm:z-[200] hover:translate-y-[-6px] transition ease-in-out duration-500 hover:shadow-[-1px_6px_10px_0_rgba(91,29,238,0.5)]">
             Get Now
           </div>
         </div>
